@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Img from '../Img';
 import Avatar from '../Img/Avatar';
+import Handle from '../Handle/index';
 
 Card.propTypes = {
     image: PropTypes.string.isRequired,
@@ -27,7 +28,7 @@ function Card(props) {
                         {props.tagNumber}
                     </span>
                     <span>
-                        {props.handle}
+                        <Handle>{props.handle}</Handle>
                     </span>
                 </div>
                 <div>
